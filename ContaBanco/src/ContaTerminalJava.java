@@ -1,8 +1,9 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class ContaTerminalJava {
     public static void main(String[] args) throws Exception {
-        Scanner sc =  new Scanner(System.in);
+        Scanner sc =  new Scanner(System.in).useLocale(Locale.US);
         int numero;
         String  agencia;
         String nomeCliente;
@@ -11,13 +12,11 @@ public class ContaTerminalJava {
         System.out.print("Digite seu numero: ");
         numero = sc.nextInt();
 
-        sc.nextLine();
-
         System.out.print("Digite sua agência: ");
-        agencia = sc.nextLine();
+        agencia = sc.next();
 
         System.out.print("Digite seu nome: ");
-        nomeCliente = sc.nextLine();
+        nomeCliente = sc.next();
 
         System.out.print("Digite seu saldo: ");
         saldo = sc.nextDouble();
