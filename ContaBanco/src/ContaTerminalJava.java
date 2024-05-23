@@ -8,18 +8,18 @@ public class ContaTerminalJava {
         String nomeCliente;
         double saldo;
 
-        System.out.println("Digite seu numero: ");
+        System.out.print("Digite seu numero: ");
         numero = sc.nextInt();
 
         sc.nextLine();
 
-        System.out.println("Digite sua agência: ");
+        System.out.print("Digite sua agência: ");
         agencia = sc.nextLine();
 
-        System.out.println("Digite seu nome: ");
+        System.out.print("Digite seu nome: ");
         nomeCliente = sc.nextLine();
 
-        System.out.println("Digite seu saldo: ");
+        System.out.print("Digite seu saldo: ");
         saldo = sc.nextDouble();
 
         System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agencia é "+ agencia + ", conta "+ numero + " e seu  saldo " + saldo + " já esta disponivel para saque.");
